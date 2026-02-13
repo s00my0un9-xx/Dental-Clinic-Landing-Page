@@ -57,6 +57,14 @@ p {
     color: #A0A4A8;
 }
 
+.location-sub-title {
+    font-family: 'Bold';
+    font-size: 28px;
+    letter-spacing: -0.01em;
+    color: #1C4D87;
+    padding-bottom: 20px;
+}
+
 .title-desc {
     font-size: 22px;
     text-align: center;
@@ -189,6 +197,11 @@ p {
 
     .en-title {
         font-size: 20px;
+    }
+
+    .location-sub-title {
+        font-size: 24px;
+        padding-bottom: 20px;
     }
 
     .title-desc {

@@ -925,15 +925,121 @@
                     </p>
                 </div>
                 <div class="location-content">
-                    <div class="subway-wrap">
-                        <div class="subway-line">
-                            <!-- icon -->
-                            <span>4호선</span>
+                    <div class="location-wrap">
+                        <div id="map"></div>
+                        <img src="./assets/images/map_pin.png" alt="map pin" class="map-pin">
+                        <div class="office-info">
+                            <div class="office-hours-box">
+                                <h3 class="location-sub-title">
+                                    진료시간 안내
+                                </h3>
+                                <ul class="hours-list">
+                                    <li>
+                                        <p class="hours-label">
+                                            평 일
+                                        </p>
+                                        <div class="time">
+                                            <span>
+                                                09:00
+                                            </span>
+                                            AM ~
+                                            <span>
+                                                06:30
+                                            </span>
+                                            PM
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="hours-label">
+                                            화 요 일
+                                        </p>
+                                        <div class="time">
+                                            <span>
+                                                09:30
+                                            </span>
+                                            AM ~
+                                            <span>
+                                                07:00
+                                            </span>
+                                            PM
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="hours-label">
+                                            점심시간
+                                        </p>
+                                        <div class="time">
+                                            <span>
+                                                01:00
+                                            </span>
+                                            AM ~
+                                            <span>
+                                                02:00
+                                            </span>
+                                            PM
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <p class="hours-label">
+                                            토 요 일
+                                        </p>
+                                        <div class="time">
+                                            <span>
+                                                09:00
+                                            </span>
+                                            AM ~
+                                            <span>
+                                                01:00
+                                            </span>
+                                            PM
+                                        </div>
+                                    </li>
+                                </ul>
+                                <p class="office-notice">
+                                    ※일요일 및 공휴일 휴진입니다.
+                                </p>
+                            </div>
+                            <div class="office-tel-wrap">
+                                <i class="fa-solid fa-phone"></i>
+                                <span class="office-tel-num">
+                                    02.012.3456
+                                </span>
+                            </div>
                         </div>
-                         <div class="subway-text">
-                            <p>신용산역 3번 출구 B동 지하로 연결되어있습니다. 수정</p>
-                            <p>test txt</p>
-                         </div>
+                    </div>
+
+                    <div class="subway-content">
+                        <h3 class="location-sub-title">
+                            지하철 이용 시
+                        </h3>
+                        <div class="subway-wrap">
+                            <div class="subway-item">
+                                <div class="subway-line line04">
+                                    <i class="fa-solid fa-train-subway train-icon"></i>
+                                    <span>4호선</span>
+                                </div>
+                                <div class="subway-text">
+                                    <p class="subway-desc">
+                                        신용산역 3번 출구 B동 지하로 연결되어있습니다.
+                                    </p>
+                                    <!-- border-right로 | 표시 -->
+                                    <p>
+                                        신용산 4번 출구 지상으로 바로 옆 B동 건물에 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="subway-item">
+                                <div class="subway-line line01">
+                                    <i class="fa-solid fa-train-subway train-icon"></i>
+                                    <span>1호선</span>
+                                </div>
+                                <div class="subway-text">
+                                    <p>
+                                        신용산역 1번 출구 길 건너편에 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -942,10 +1048,48 @@
     <a href="#" class="floating-top-btn">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-    <footer></footer>
+    <footer>
+        <div class="contianer">
+            <div class="footer-logo">
+                <a href="#" class="logo">
+                    <img src="./assets/images/Logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="policy-wrap">
+                <a href="#" class="policy-link">
+                    이용약관
+                </a>
+                <a href="#" class="policy-link">
+                    개인정보취급방침
+                </a>
+            </div>
+            <div class="footer-bottom-box">
+                <div class="footer-text"></div>
+                <div class="socials">
+                    <a href="#" class="social-item">
+                        <img src="" alt="">
+                    </a>
+                    <div class="social-line"></div>
+                    <a href="#" class="social-item">
+                        <img src="" alt="">
+                    </a>
+                    <div class="social-line"></div>
+                    <a href="#" class="social-item">
+                        <img src="" alt="">
+                    </a>
+                    <div class="social-line"></div>
+                    <a href="#" class="social-item">
+                        <img src="" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script type="text/javascript"
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6dd6e5b91b84483bb55e9e2fbc1d11c0"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
