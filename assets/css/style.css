@@ -1,0 +1,1295 @@
+@import url('commons.css');
+
+/* font */
+@font-face {
+    font-family: 'ExtraBold';
+    font-weight: 800;
+    src: url('../fonts/Pretendard-ExtraBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bold';
+    font-weight: 700;
+    src: url('../fonts/Pretendard-Bold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Medium';
+    font-weight: 500;
+    src: url('../fonts/Pretendard-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Regular';
+    font-weight: 400;
+    src: url('../fonts/Pretendard-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Light';
+    font-weight: 300;
+    src: url('../fonts/Pretendard-Light.woff') format('woff');
+}
+
+/* header */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 26px 180px;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    /* position: fixed; */
+}
+
+.mo-hb-menu {
+    display: none;
+}
+
+/* Hero section */
+.hero-sec {
+    width: 100%;
+    height: 910px;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../images/Hero_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1F2A33;
+    padding: 280px 180px 26px 180px;
+    color: #fff;
+    position: relative;
+}
+
+
+.hero-page {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-content {
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.hero-text {
+    margin-bottom: 30px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    font-family: 'Medium';
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+
+    width: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
+.sub-text {
+    font-family: 'Bold';
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.main-text p {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.main-text h2 {
+    font-family: 'ExtraBold';
+    font-size: 56px;
+    margin-top: 10px;
+}
+
+.hero-btns {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-btns a {
+    background-color: #1C4D87;
+}
+
+.btn {
+    font-family: 'Medium';
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px 42px;
+    border-radius: 50px;
+}
+
+.btn:hover {
+    background-color: #1F2A33;
+    transition: 0.3s;
+}
+
+.scroll-down {
+    width: 100%;
+    text-align: center;
+}
+
+.scroll-down img {
+    position: relative;
+    animation: down 1.5s infinite;
+}
+
+@keyframes down {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(6px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+.sd-text {
+    font-family: 'Bold';
+    font-size: 14px;
+}
+
+/* brand message section */
+
+.brand-message-sec {
+    width: 100%;
+    text-align: center;
+    padding: 160px 0;
+    background: linear-gradient(-45deg, #D8E6ED, #EBF2F6);
+}
+
+.bm-title {
+    width: 100%;
+    font-family: 'Bold';
+    font-size: 54px;
+    text-align: center;
+    color: #1F2A33;
+    line-height: 1.2;
+}
+
+.bm-title p {
+    color: #1C4D87;
+    display: inline;
+}
+
+.bm-line {
+    width: 25%;
+    height: 2px;
+    background-color: #A0A4A8;
+    margin: 40px 0;
+}
+
+.bm-text {
+    font-size: 24px;
+    color: #1F2A33;
+}
+
+/* services section */
+.services-sec {
+    padding: 100px 0;
+}
+
+.tab {
+    display: none;
+    padding: 60px 96px;
+    background-color: #F9FBFC;
+    gap: 60px;
+    align-items: center;
+}
+
+.tab.active {
+    display: flex;
+}
+
+.tab-text-wrap {
+    width: 100%;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.service-img {
+    min-width: 368px;
+    height: 267px;
+    background-color: #D9ECF4;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.services-title {
+    font-family: 'Bold';
+    font-size: 26px;
+}
+
+.services-desc {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* value section */
+.value-sec {
+    padding: 100px 0;
+    background-color: #1C4D87;
+}
+
+.value-container {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.img-box {
+    width: 50%;
+    height: 45vh;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-box::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.3)95%);
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+.img-box img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+}
+
+.img-box:hover img {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.value-content {
+    width: 50%;
+    height: 100%;
+    color: #fff;
+    padding: 12px 20px;
+}
+
+.value-text {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.value-title {
+    font-family: 'Bold';
+    font-size: 33px;
+}
+
+.value-line {
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    margin: 28.5px 0;
+}
+
+.value-list-title {
+    font-family: 'Bold';
+    font-size: 20px;
+}
+
+.we-value a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.we-value a:hover {
+    text-decoration: underline;
+}
+
+.value-btns a {
+    background-color: #3F7FBF;
+}
+
+.value-btns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+}
+
+/* dr intro section */
+.dr-intro-sec {
+    padding: 160px 0;
+}
+
+.dr-content {
+    display: flex;
+    gap: 16px;
+}
+
+.dr-item {
+    width: 100%;
+    height: 516px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.dr-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.dr-text {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 40px 26px;
+    background-color: rgba(255, 255, 255, .8);
+    opacity: 0;
+    transition: 0.3s ease-in;
+    text-align: center;
+    font-size: 18px;
+}
+
+.dr-item:hover .dr-text {
+    opacity: 100%;
+}
+
+.dr-info-box {
+    color: #1C4D87;
+}
+
+.dr-info-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.dr-name {
+    font-family: 'Bold';
+    font-size: 30px;
+
+}
+
+.dr-info-line {
+    width: 2px;
+    height: 16px;
+    background-color: #52606C;
+    border-radius: 10px;
+}
+
+.dr-department {
+    margin-top: 6px;
+}
+
+.dr-qualif {
+    color: #52606C;
+    margin-top: 20px;
+}
+
+/* clinic section */
+.clinic-sec {
+    padding: 100px 0;
+    position: relative;
+}
+
+.clinic-sec::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(/assets/images/clinic_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 10%;
+}
+
+.clinic-swiper {
+    width: 100%;
+    height: 512px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.swiper-wrapper {
+    align-items: center;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    scale: 0.85;
+    position: relative;
+}
+
+.swiper-slide::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.swiper-slide-active {
+    scale: 1;
+}
+
+.swiper-slide-active::after {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.clinic-facilitie-text {
+    position: absolute;
+    background: linear-gradient(to top, rgba(0, 0, 0, .9), rgba(0, 0, 0, 0));
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #F1F4F6;
+    font-size: 22px;
+    opacity: 0;
+    transition: .3s;
+}
+
+.clinic-facilitie-title {
+    font-family: 'Bold';
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.swiper-slide:hover .clinic-facilitie-text {
+    opacity: 100%;
+}
+
+.swiper-button-wrap {
+    position: absolute;
+    width: 100%;
+    height: 44px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, .6);
+    color: #1C4D87;
+    padding: 10px 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+    font-size: 30px;
+}
+
+.swiper-button-prev svg,
+.swiper-button-next svg {
+    display: none;
+}
+
+/* ba section */
+.ba-sec {
+    padding: 160px 0;
+}
+
+.ba-tab-menu {
+    width: 100%;
+}
+
+.ba-tab {
+    display: none;
+    width: 100%;
+    flex-flow: wrap;
+    gap: 16px;
+    padding: 30px 0;
+}
+
+.ba-tab.active {
+    display: flex;
+}
+
+.case-item {
+    width: calc((100% - 32px) / 3);
+    height: 315px;
+}
+
+.treatment-img-box {
+    width: 100%;
+    height: 264px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.treatment-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.treatment-img-text {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+}
+
+.treatment-img-text p {
+    background-color: #8EBFD6;
+    padding: 10px 20px;
+}
+
+.treatment-img-text p:nth-child(1) {
+    border-radius: 0 10px 0 0;
+}
+
+.treatment-img-text p:nth-child(2) {
+    border-radius: 10px 0 0 0;
+}
+
+.treatment-category {
+    padding: 10px 20px;
+    background-color: #FFF;
+    border: 1px solid #1C4D87;
+    border-radius: 20px;
+    color: #1C4D87;
+    font-family: Bold;
+    font-size: 16px;
+    margin-top: 12px;
+    transition: 0.3s;
+}
+
+.case-item:hover .treatment-category {
+    background-color: #1C4D87;
+    color: #fff;
+}
+
+/* contact section */
+.contact-sec {
+    padding: 100px 0;
+    background-color: #F9FBFC;
+}
+
+.contact-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 70px;
+    background-color: #fff;
+    border: 1px solid #A0A4A8;
+    border-radius: 20px;
+    align-items: stretch;
+    gap: 33.5px;
+}
+
+.contact-img-box {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+}
+
+.contact-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-img-text {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .4);
+    color: #fff;
+    padding: 10px;
+}
+
+.contact-img-title {
+    font-family: 'Bold';
+    font-size: 36px;
+}
+
+.contact-line {
+    width: 2px;
+    height: 50%;
+    background-color: #A0A4A8;
+    opacity: 50%;
+    border-radius: 10px;
+}
+
+.contact-user-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contact-user-info {
+    width: 100%;
+}
+
+.user-info-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Medium';
+    font-size: 20px;
+}
+
+.user-info-box input,
+select,
+textarea {
+    width: 100%;
+    border: 1px solid #A0A4A8;
+    border-radius: 5px;
+    font-family: 'Regular';
+    font-size: 16px;
+    padding: 10px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 16px;
+    font-family: 'Regular';
+    color: #A0A4A8;
+}
+
+.input-item select {
+    font-family: 'Regular';
+    font-size: 16px;
+    appearance: none;
+    background: url(../images/services_down_icon.png) no-repeat right 10px center;
+}
+
+.info-notice {
+    text-align: end;
+}
+
+.user-info-box {
+    margin: 16px 0 12px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-agree {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.contact-agree label {
+    display: flex;
+    align-items: center;
+}
+
+#agree {
+    width: 18px;
+    height: 18px;
+    margin: 3px;
+}
+
+.agree-text {
+    font-size: 16px;
+    padding-left: 4px;
+}
+
+.agree-link {
+    font-size: 14px;
+    color: #52606C;
+}
+
+.agree-link:hover {
+    font-weight: bold;
+}
+
+.contact-user-btn {
+    padding: 20px 0;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Bold';
+    font-size: 22px;
+    color: #fff;
+    background-color: #8EBFD6;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-user-btn.active {
+    cursor: pointer;
+    background-color: #1C4D87;
+}
+
+.contact-user-btn.active:hover {
+    background-color: #153966;
+}
+
+
+@media (max-width: 1680px) {}
+
+@media (max-width: 1280px) {
+
+    /* Hero section */
+    .main-text p {
+        font-size: 34px;
+    }
+
+    .main-text h2 {
+        font-family: 'ExtraBold';
+        font-size: 50px;
+    }
+
+    /* brand message section */
+    .bm-title {
+        font-size: 50px;
+    }
+
+    .bm-text {
+        font-size: 20px;
+    }
+
+    /* dr intro section */
+    .dr-text {
+        padding: 40px 16px;
+        font-size: 16px;
+    }
+
+    .dr-name {
+        font-size: 20px;
+    }
+
+    .dr-qualif {
+        margin-top: 14px;
+    }
+
+    /* clinic section */
+    .swiper-button-wrap {
+        padding: 0 18%;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+    /* Header */
+    .header {
+        padding: 26px 32px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .menu-list {
+        gap: 28px;
+    }
+
+    .menu a {
+        font-size: 16px;
+    }
+
+    /* Hero section */
+    .hero-sec {
+        padding: 390px 32px 30px 32px;
+    }
+
+    .sub-text {
+        font-size: 16px;
+    }
+
+    .main-text p {
+        font-size: 28px;
+        margin-bottom: 0;
+    }
+
+    .main-text h2 {
+        font-size: 42px;
+    }
+
+    /* brand message section */
+    .bm-title {
+        font-size: 32px;
+    }
+
+    .bm-line {
+        margin: 20px 0;
+    }
+
+    .bm-text {
+        font-size: 18px;
+    }
+
+    .brand-message-sec {
+        padding: 100px 0;
+    }
+
+    /* services section */
+    .tab {
+        padding: 60px 36px;
+        gap: 30px;
+    }
+
+    .service-img {
+        min-width: unset;
+        width: 50%;
+    }
+
+    .tab-text-wrap {
+        width: 50%;
+    }
+
+    /* value section */
+    .value-sec {
+        padding: 60px 0;
+    }
+
+    .value-title {
+        font-size: 23px;
+    }
+
+    .value-text {
+        font-size: 16px;
+    }
+
+    .value-list-title {
+        font-size: 18px;
+    }
+
+    /* dr intro section */
+    .dr-intro-sec {
+        padding: 100px 0;
+    }
+
+    .dr-content {
+        flex-flow: wrap;
+        padding: 0 72px;
+    }
+
+    .dr-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    .dr-text {
+        padding: 40px 26px;
+        font-size: 18px;
+        opacity: 100%;
+    }
+
+    .dr-name {
+        font-size: 30px;
+    }
+
+    .dr-qualif {
+        margin-top: 20px;
+    }
+
+    /* clinic section */
+    .clinic-sec {
+        padding: 100px 32px;
+    }
+
+    .clinic-facilitie-text {
+        opacity: 100%;
+        padding: 0 10%;
+    }
+
+    .swiper-button-wrap {
+        padding: 0 1%;
+    }
+
+    /* ba section */
+    .ba-sec {
+        padding: 100px 0;
+    }
+
+    .ba-tab {
+        flex-flow: wrap;
+    }
+
+    .case-item {
+        width: calc((100% - 16px) / 2);
+    }
+
+    /* contact section */
+    .contact-sec {
+        padding: 60px 0;
+    }
+
+    .contact-img-box {
+        display: none;
+    }
+
+    .contact-line {
+        display: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .menu-list {
+        gap: 20px;
+    }
+
+    .menu a {
+        font-size: 14px;
+    }
+
+    /* Hero section */
+    .hero-sec {
+        height: 960px;
+        padding: 390px 32px 30px 30px;
+    }
+
+    .sub-text {
+        font-size: 16px;
+    }
+
+    .main-text p {
+        font-size: 28px;
+    }
+
+    .main-text h2 {
+        font-size: 44px;
+    }
+
+    /* services section */
+    .tabs button {
+        font-size: 18px;
+    }
+
+    .services-desc {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 540px) {
+
+    /* Header */
+    .menu-list {
+        display: none;
+    }
+
+    .mo-hb-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    /* Hero section */
+    .hero-sec {
+        height: 800px;
+        padding: 250px 16px 62px 16px;
+    }
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .sub-text {
+        font-size: 14px;
+    }
+
+    .main-text p {
+        font-size: 24px;
+    }
+
+    .main-text h2 {
+        font-size: 36px;
+        margin-top: 6px;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px 22px;
+    }
+
+    .sd-text {
+        font-size: 12px;
+    }
+
+    /* brand message section */
+    .brand-message-sec {
+        padding: 50px 0;
+    }
+
+    .bm-title {
+        font-size: 28px;
+    }
+
+    .bm-text {
+        font-size: 15px;
+        line-height: 1.2;
+    }
+
+    /* services section */
+    .services-sec {
+        padding: 50px 0;
+    }
+
+    .title-box {
+        margin-bottom: 30px;
+    }
+
+    .tabs {
+        flex-flow: wrap;
+    }
+
+    .tabs li {
+        width: 33.333%;
+    }
+
+    .tab {
+        padding: 30px 20px;
+        gap: 24px;
+    }
+
+    .tab.active {
+        flex-direction: column;
+    }
+
+    .tabs button {
+        font-size: 16px;
+    }
+
+    .service-img {
+        width: 100%;
+        height: 180.45px;
+    }
+
+    .service-img img {
+        width: 84px;
+    }
+
+    .tab-text-wrap {
+        width: 100%;
+        padding: 0;
+    }
+
+    .services-title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .services-desc {
+        margin-top: 16px;
+        font-size: 15px;
+    }
+
+    /* value section */
+    .value-sec {
+        padding: 50px 0;
+    }
+
+    .value-container {
+        flex-direction: column;
+    }
+
+    .img-box {
+        width: 100%;
+        height: 260px;
+    }
+
+    .img-box img {
+        height: 100%;
+    }
+
+    .value-content {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .value-line {
+        margin: 16px auto;
+    }
+
+    .value-btns {
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    /* dr intro section */
+    .dr-intro-sec {
+        padding: 50px 0;
+    }
+
+    .dr-content {
+        padding: 0;
+    }
+
+    .dr-item {
+        height: 350px;
+    }
+
+    .dr-text {
+        padding: 32px 10px;
+        font-size: 14px;
+    }
+
+    .dr-info-box {
+        gap: 2px;
+    }
+
+    .dr-name {
+        font-size: 22px;
+    }
+
+    .dr-qualif {
+        margin-top: 6px;
+    }
+
+    /* clinic section */
+    .clinic-sec {
+        padding: 50px 16px;
+    }
+
+    .title-box {
+        margin-bottom: 30px;
+    }
+
+    .clinic-facilitie-text {
+        font-size: 15px;
+    }
+
+    .clinic-facilitie-title {
+        font-size: 26px;
+    }
+
+    /* ba section */
+    .ba-sec {
+        padding: 50px 0;
+    }
+
+    .case-item {
+        width: 100%;
+    }
+
+    /* contact section */
+    .contact-sec {
+        padding: 50px 0;
+    }
+
+    .contact-content {
+        padding: 20px;
+    }
+
+    .info-notice {
+        font-size: 15px;
+    }
+    
+    .user-info-box label {
+        font-size: 18px;
+    }
+
+    .agree-text {
+        font-size: 15px;
+    }
+
+    .contact-user-btn {
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 414px) {
+
+    /* brand message section */
+    .bm-title {
+        font-size: 26px;
+    }
+
+    /* clinic section */
+    .clinic-facilitie-text {
+        padding: 0 16%;
+    }
+
+    .clinic-facilitie-title {
+        letter-spacing: -0.02em;
+    }
+}
