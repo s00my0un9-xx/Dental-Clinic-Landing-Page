@@ -1144,6 +1144,11 @@ footer {
         font-size: 16px;
     }
 
+    .we-value a {
+        text-decoration: underline;
+        text-underline-position: under;
+    }
+
     .value-list-title {
         font-size: 18px;
     }
