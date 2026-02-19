@@ -940,6 +940,82 @@ textarea::placeholder {
     border-right: 1px solid #1C4D87;
 }
 
+/* footer */
+footer {
+    background-color: #1C4D87;
+    color: #F1F4F6;
+    padding: 80px;
+}
+
+.footer-logo {
+    width: 100%;
+}
+
+.policy-wrap {
+    width: 100%;
+    padding: 16px 0;
+}
+
+.policy-link {
+    text-decoration: none;
+    color: #F1F4F6;
+    padding-right: 20px;
+    font-family: 'Bold';
+}
+
+.footer-bottom-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.copyright-text {
+    padding-bottom: 30px;
+}
+
+.address,
+.owner,
+.footer-office-tel {
+    width: 100%;
+}
+
+.footer-line {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #F1F4F6;
+    background-color: #F1F4F6;
+    margin: 0 4px;
+    vertical-align: middle;
+}
+
+.socials {
+    width: 368px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+}
+
+.social-item img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.social-line {
+    display: inline-block;
+    width: 1px;
+    background-color: #F1F4F6;
+    height: 14px;
+    border-radius: 5px;
+}
+
+
 
 
 @media (max-width: 1680px) {}
@@ -1188,6 +1264,27 @@ textarea::placeholder {
     .subway-desc {
         border: none;
         padding-bottom: 6px;
+    }
+
+    /* footer */
+    footer {
+        padding: 60px 0;
+        font-size: 14px;
+    }
+
+    .footer-bottom-wrap {
+        flex-direction: column;
+        align-items: start;
+        gap: 16px;
+    }
+
+    .socials {
+        width: 235px;
+    }
+
+    .social-item {
+        width: 36px;
+        height: 36px;
     }
 
 }
@@ -1471,7 +1568,8 @@ textarea::placeholder {
         gap: 20px;
     }
 
-    .office-info, .subway-content {
+    .office-info,
+    .subway-content {
         padding: 0;
     }
 
@@ -1487,9 +1585,26 @@ textarea::placeholder {
         font-size: 34px;
     }
 
-    .subway-line, .subway-text p {
+    .subway-line,
+    .subway-text p {
         font-size: 16px;
     }
+
+    /* footer */
+    footer {
+        padding: 40px 0;
+        font-size: 12px;
+    }
+
+    .socials {
+        width: 215px;
+    }
+
+    .social-item {
+        width: 32px;
+        height: 32px;
+    }
+
 
 }
 
