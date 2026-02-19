@@ -1181,6 +1181,10 @@ footer {
         padding: 100px 32px;
     }
 
+    .clinic-swiper {
+        height: 440px;
+    }
+
     .clinic-facilitie-text {
         opacity: 100%;
         padding: 0 10%;
@@ -1230,6 +1234,7 @@ footer {
 
     #map {
         width: 100%;
+        height: 400px;
     }
 
     .office-info {
@@ -1343,8 +1348,8 @@ footer {
 
     /* Hero section */
     .hero-sec {
-        height: 800px;
-        padding: 250px 16px 62px 16px;
+        height: 630px;
+        padding: 210px 16px 30px 16px;
     }
 
     .hero-content {
@@ -1517,6 +1522,10 @@ footer {
         margin-bottom: 30px;
     }
 
+    .clinic-swiper {
+        height: 302px;
+    }
+
     .clinic-facilitie-text {
         font-size: 15px;
     }
@@ -1532,6 +1541,14 @@ footer {
 
     .case-item {
         width: 100%;
+    }
+
+    .tabs button, .ba-tabs button {
+        font-size: 16px;
+    }
+
+    .treatment-category {
+        font-size: 14px;
     }
 
     /* contact section */
@@ -1566,6 +1583,10 @@ footer {
 
     .location-wrap {
         gap: 20px;
+    }
+
+    #map {
+        height: 320px;
     }
 
     .office-info,
