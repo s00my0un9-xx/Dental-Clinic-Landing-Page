@@ -44,6 +44,41 @@
     /* position: fixed; */
 }
 
+.logo img {
+    width: 155px;
+    object-fit: cover;
+}
+
+.menu-list {
+    display: flex;
+    gap: 40px;
+}
+
+.menu a {
+    font-family: 'Medium';
+    font-size: 18px;
+    text-decoration: none;
+    color: #fff;
+
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.menu a::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+
+    width: 0;
+    bottom: 0;
+    transition: 0.3s;
+}
+
+.menu a:hover::before {
+    width: 100%;
+}
+
 .mo-hb-menu {
     display: none;
 }
@@ -80,36 +115,6 @@
 
 .hero-text {
     margin-bottom: 30px;
-}
-
-.menu-list {
-    display: flex;
-    gap: 40px;
-}
-
-.menu a {
-    font-family: 'Medium';
-    font-size: 18px;
-    text-decoration: none;
-    color: #fff;
-
-    position: relative;
-    padding-bottom: 5px;
-}
-
-.menu a::before {
-    content: "";
-    position: absolute;
-    background-color: #fff;
-    height: 2px;
-
-    width: 0;
-    bottom: 0;
-    transition: 0.3s;
-}
-
-.menu a:hover::before {
-    width: 100%;
 }
 
 .sub-text {
@@ -1555,7 +1560,8 @@ footer {
         width: 100%;
     }
 
-    .tabs button, .ba-tabs button {
+    .tabs button,
+    .ba-tabs button {
         font-size: 16px;
     }
 
