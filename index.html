@@ -18,23 +18,23 @@
             <a href="#" class="logo">
                 <img src="./assets/images/Logo.png" alt="logo" class="logo-basic">
                 <img src="./assets/images/Logo_BL.png" alt="logo blue" class="logo-color">
-            </a> 
+            </a>
         </h1>
         <ul class="menu-list">
             <li class="menu">
-                <a href="#">진료안내</a>
+                <a href="#services">진료안내</a>
             </li>
             <li class="menu">
-                <a href="#">의료진소개</a>
+                <a href="#dr">의료진소개</a>
             </li>
             <li class="menu">
-                <a href="#">병원소개</a>
+                <a href="#clinic">시설소개</a>
             </li>
             <li class="menu">
-                <a href="#">전후사진</a>
+                <a href="#ba">전후사진</a>
             </li>
             <li class="menu">
-                <a href="#">문의</a>
+                <a href="#contact">문의</a>
             </li>
         </ul>
         <figure class="mo-hb-menu">
@@ -58,10 +58,10 @@
                     </div>
                 </div>
                 <div class="hero-btns">
-                    <a href="#" class="btn">
+                    <a href="#contact" class="btn">
                         빠른 상담 예약
                     </a>
-                    <a href="#" class="btn">
+                    <a href="#" class="btn" id="openModal">
                         이벤트 확인하기
                     </a>
                 </div>
@@ -91,7 +91,7 @@
             </div>
         </section>
 
-        <section class="services-sec">
+        <section class="services-sec" id="services">
             <div class="container">
                 <div class="title-box">
                     <h2 class="title">
@@ -263,19 +263,19 @@
                                 We Value
                             </h3>
                             <li>
-                                <a href="#">
+                                <p>
                                     3D CT / 구강스캐너 기반의 정밀 진단
-                                </a>
+                                </p>
                             </li>
                             <li>
-                                <a href="#">
+                                <p>
                                     치료 전·후를 예측할 수 있는 디지털 분석
-                                </a>
+                                </p>
                             </li>
                             <li>
-                                <a href="#">
+                                <p>
                                     불필요한 치료 없이 꼭 필요한 솔루션만 제공
-                                </a>
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -288,7 +288,7 @@
             </div>
         </section>
 
-        <section class="dr-intro-sec">
+        <section class="dr-intro-sec" id="dr">
             <div class="container">
                 <div class="title-box">
                     <h2 class="title">
@@ -391,7 +391,7 @@
             </div>
         </section>
 
-        <section class="clinic-sec">
+        <section class="clinic-sec" id="clinic">
             <div class="clinic-title">
                 <div class="title-box">
                     <h2 class="title">
@@ -490,7 +490,7 @@
             </div>
         </section>
 
-        <section class="ba-sec">
+        <section class="ba-sec" id="ba">
             <div class="container">
                 <div class="ba-title">
                     <div class="title-box">
@@ -832,7 +832,7 @@
             </div>
         </section>
 
-        <section class="contact-sec">
+        <section class="contact-sec" id="contact">
             <div class="container">
                 <div class="contact-title">
                     <div class="title-box">
@@ -1001,10 +1001,10 @@
                                 </p>
                             </div>
                             <div class="office-tel-wrap">
-                                <i class="fa-solid fa-phone"></i>
-                                <span class="office-tel-num">
+                                <i class="fa-solid fa-phone" ></i>
+                                <a href="tel:02-012-3456" class="office-tel-num">
                                     02.012.3456
-                                </span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -1046,9 +1046,22 @@
             </div>
         </section>
     </main>
+
+    <!-- top button -->
     <a href="#" class="floating-top-btn">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
+
+    <!-- event modal -->
+    <div id="eventModal" class="modal-bg">
+        <div class="modal-content">
+            <span class="close-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <img src="./assets/images/event_popup_img.png" alt="서울명치과 오픈 이벤트 40% 할인">
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="footer-logo">
@@ -1077,7 +1090,7 @@
                             <span class="footer-line"></span>
                             대표자 : 김도현
                             <span class="footer-line"></span>
-                            사업자등록번호 : 123-45-67891 
+                            사업자등록번호 : 123-45-67891
                         </p>
                         <p class="footer-office-tel">
                             TEL : 02-012-3456

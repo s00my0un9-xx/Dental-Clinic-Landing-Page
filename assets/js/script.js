@@ -1,6 +1,5 @@
-157355// services section
 
-// header
+// header ---
 const header = document.querySelector("#header");
 window.addEventListener("scroll", function () {
   if (window.scrollY > 800) {
@@ -10,8 +9,20 @@ window.addEventListener("scroll", function () {
   }
 })
 
-// services tab menu
+
 $(function () {
+  // event modal ---
+  $("#openModal").on('click', function (e) {
+    e.preventDefault();
+
+    $("#eventModal").css('display', 'flex').hide().fadeIn(300);
+  });
+
+  $(".close-btn i").on('click', function () {
+    $("#eventModal").fadeOut(300);
+  })
+
+  // services tab menu ---
   $(".tabs button").click(function () {
     const target = $(this).parent().data("target");
     $(".tab").removeClass("active");
@@ -20,10 +31,8 @@ $(function () {
     $(".tabs li").removeClass("active");
     $(this).parent().addClass("active");
   });
-});
 
-// ba tab menu
-$(function () {
+  // ba tab menu ---
   $(".ba-tabs button").click(function () {
     const filter = $(this).parent().data("filter");
     $(".ba-tab").removeClass("active");
@@ -32,12 +41,16 @@ $(function () {
     $(".ba-tabs li").removeClass("active");
     $(this).parent().addClass("active");
   });
+
+  // clinic swiper hover stop ---
+  $('.swiper-slide').hover(function () {
+    swiper.autoplay.stop();
+  }, function () {
+    swiper.autoplay.start();
+  });
 });
 
-
-// clinic section
-
-// clinic swiper
+// clinic swiper ---
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   centeredSlides: true,
@@ -59,6 +72,8 @@ var swiper = new Swiper(".mySwiper", {
     }
   }
 });
+
+
 
 // contact form
 const contactForm = document.querySelector('.contact-user-box');

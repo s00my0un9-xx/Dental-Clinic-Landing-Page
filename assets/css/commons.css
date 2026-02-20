@@ -1,6 +1,7 @@
 /* common css */
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -108,6 +109,46 @@ p {
 .floating-top-btn i {
     font-size: 28px;
     color: #1C4D87;
+}
+
+/* event madal */
+.modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-content {
+    position: relative;
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.close-btn {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    color: #fff;
+    padding: 20px;
+    font-size: 26px;
+}
+
+.close-btn i {
+    cursor: pointer;
+}
+
+.modal-content img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* tab menu */
