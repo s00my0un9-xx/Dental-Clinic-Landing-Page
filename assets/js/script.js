@@ -1,5 +1,15 @@
 157355// services section
 
+// header
+const header = document.querySelector("#header");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 800) {
+    header.classList.add("on");
+  } else {
+    header.classList.remove("on");
+  }
+})
+
 // services tab menu
 $(function () {
   $(".tabs button").click(function () {
@@ -76,24 +86,26 @@ contactForm.addEventListener('input', checkForm);
 contactForm.addEventListener('change', checkForm);
 
 // map
-var mapContainer = document.getElementById('map'),
-  mapOption = {
-    center: new kakao.maps.LatLng(37.529505, 126.967319), // 지도 중심좌표
-    level: 3
-  };
+kakao.maps.load(function () {
+  var mapContainer = document.getElementById('map'),
+    mapOption = {
+      center: new kakao.maps.LatLng(37.529505, 126.967319), // 지도 중심좌표
+      level: 3
+    };
 
-var map = new kakao.maps.Map(mapContainer, mapOption);
+  var map = new kakao.maps.Map(mapContainer, mapOption);
 
-var imageSrc = './assets/images/map_pin.png',
-  imageSize = new kakao.maps.Size(40, 40),
-  imageOption = { offset: new kakao.maps.Point(10, 40) };
+  var imageSrc = './assets/images/map_pin.png',
+    imageSize = new kakao.maps.Size(40, 40),
+    imageOption = { offset: new kakao.maps.Point(10, 40) };
 
-var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
-  markerPosition = new kakao.maps.LatLng(37.529505, 126.967319); // 마커가 표시 위치
+  var markerImage = new kakao.maps.MarkerImage(imageSrc, imageSize, imageOption),
+    markerPosition = new kakao.maps.LatLng(37.529505, 126.967319); // 마커가 표시 위치
 
-var marker = new kakao.maps.Marker({
-  position: markerPosition,
-  image: markerImage
+  var marker = new kakao.maps.Marker({
+    position: markerPosition,
+    image: markerImage
+  });
+
+  marker.setMap(map);
 });
-
-marker.setMap(map);  

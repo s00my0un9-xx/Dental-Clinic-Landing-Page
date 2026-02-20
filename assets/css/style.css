@@ -39,14 +39,18 @@
     align-items: center;
     padding: 26px 180px;
     color: #fff;
-    position: absolute;
-    z-index: 1;
-    /* position: fixed; */
+    z-index: 999;
+    position: fixed;
+    transition: all 0.3s;
 }
 
 .logo img {
     width: 155px;
     object-fit: cover;
+}
+
+.logo-color {
+    display: none;
 }
 
 .menu-list {
@@ -82,6 +86,29 @@
 .mo-hb-menu {
     display: none;
 }
+
+/* scroll header */
+#header.on {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header.on .menu a {
+    color: #1C4D87;
+}
+
+#header.on .menu a::before {
+    background-color: #1C4D87;
+}
+
+#header.on .logo-basic {
+    display: none;
+}
+
+#header.on .logo-color {
+    display: block;
+}
+
 
 /* Hero section */
 .hero-sec {
