@@ -1408,6 +1408,28 @@ footer {
         object-fit: cover;
     }
 
+    /* scroll header */
+    #header.on {
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    #header.on .menu a {
+        color: #1C4D87;
+    }
+
+    #header.on .menu a::before {
+        background-color: #1C4D87;
+    }
+
+    #header.on .logo-basic {
+        display: none;
+    }
+
+    #header.on .logo-color {
+        display: block;
+    }
+
     /* Hero section */
     .hero-sec {
         height: 640px;

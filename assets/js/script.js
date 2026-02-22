@@ -1,8 +1,11 @@
 
 // header ---
 const header = document.querySelector("#header");
+
 window.addEventListener("scroll", function () {
-  if (window.scrollY > 800) {
+  const changePoint = window.innerWidth < 768 ? 500 : 800;
+
+  if (window.scrollY > changePoint) {
     header.classList.add("on");
   } else {
     header.classList.remove("on");
