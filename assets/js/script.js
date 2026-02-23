@@ -20,7 +20,13 @@ $(function () {
 
     $(".side-menu").fadeToggle(300).css('display', 'flex');
     $('body').toggleClass('no-scroll');
-  })
+  });
+
+  $(".side-menu-list a").on('click', function () {
+    $(".mo-hb-menu").removeClass('active');
+    $(".side-menu").fadeOut(300);
+    $("body").removeClass('no-scroll');
+  });
 
   // event modal ---
   $("#openModal").on('click', function (e) {
@@ -29,11 +35,9 @@ $(function () {
     $("#eventModal").css('display', 'flex').hide().fadeIn(300);
   });
 
-  $(".side-menu-list a").on('click', function () {
-    $(".mo-hb-menu").removeClass('active');
-    $(".side-menu").fadeOut(300);
-    $("body").removeClass('no-scroll');
-  });
+  $(".close-btn i").on('click', function () {
+    $("#eventModal").fadeOut(300);
+  })
 
   // services tab menu ---
   $(".tabs button").click(function () {
