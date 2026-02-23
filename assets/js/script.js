@@ -14,6 +14,14 @@ window.addEventListener("scroll", function () {
 
 
 $(function () {
+  // mo menu ---
+  $(".mo-hb-menu").on('click', function () {
+    $(this).toggleClass('active');
+
+    $(".side-menu").fadeToggle(300).css('display', 'flex');
+    $('body').toggleClass('no-scroll');
+  })
+
   // event modal ---
   $("#openModal").on('click', function (e) {
     e.preventDefault();
@@ -21,9 +29,11 @@ $(function () {
     $("#eventModal").css('display', 'flex').hide().fadeIn(300);
   });
 
-  $(".close-btn i").on('click', function () {
-    $("#eventModal").fadeOut(300);
-  })
+  $(".side-menu-list a").on('click', function () {
+    $(".mo-hb-menu").removeClass('active');
+    $(".side-menu").fadeOut(300);
+    $("body").removeClass('no-scroll');
+  });
 
   // services tab menu ---
   $(".tabs button").click(function () {
@@ -35,6 +45,7 @@ $(function () {
     $(this).parent().addClass("active");
   });
 
+
   // ba tab menu ---
   $(".ba-tabs button").click(function () {
     const filter = $(this).parent().data("filter");
@@ -45,6 +56,7 @@ $(function () {
     $(this).parent().addClass("active");
   });
 
+
   // clinic swiper hover stop ---
   $('.swiper-slide').hover(function () {
     swiper.autoplay.stop();
@@ -52,6 +64,7 @@ $(function () {
     swiper.autoplay.start();
   });
 });
+
 
 // clinic swiper ---
 var swiper = new Swiper(".mySwiper", {
@@ -76,9 +89,7 @@ var swiper = new Swiper(".mySwiper", {
   }
 });
 
-
-
-// contact form
+// contact form ---
 const contactForm = document.querySelector('.contact-user-box');
 const submitBtn = document.querySelector('.contact-user-btn');
 
@@ -103,7 +114,7 @@ function checkForm() {
 contactForm.addEventListener('input', checkForm);
 contactForm.addEventListener('change', checkForm);
 
-// map
+// map ---
 kakao.maps.load(function () {
   var mapContainer = document.getElementById('map'),
     mapOption = {

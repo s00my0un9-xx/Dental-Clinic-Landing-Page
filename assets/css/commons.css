@@ -16,11 +16,6 @@ h3 {
     letter-spacing: -0.01em;
 }
 
-/* 후에 삭제 */
-.mo-nav {
-    display: none;
-}
-
 p {
     letter-spacing: -0.01em;
     line-height: 1.4;
