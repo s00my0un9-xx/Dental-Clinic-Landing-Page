@@ -1,35 +1,5 @@
 @import url('commons.css');
 
-/* font */
-@font-face {
-    font-family: 'ExtraBold';
-    font-weight: 800;
-    src: url('../fonts/Pretendard-ExtraBold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Bold';
-    font-weight: 700;
-    src: url('../fonts/Pretendard-Bold.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Medium';
-    font-weight: 500;
-    src: url('../fonts/Pretendard-Medium.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Regular';
-    font-weight: 400;
-    src: url('../fonts/Pretendard-Regular.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'Light';
-    font-weight: 300;
-    src: url('../fonts/Pretendard-Light.woff') format('woff');
-}
 
 /* header */
 .header {
@@ -233,7 +203,7 @@
     line-height: 1.2;
 }
 
-.bm-title p {
+.bm-highlight-text {
     color: #1C4D87;
     display: inline;
 }
@@ -1401,8 +1371,12 @@ footer {
         justify-content: space-between;
         width: 33px;
         height: 22px;
-        cursor: pointer;
         z-index: 1001;
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
     }
 
     .mo-hb-menu span {

@@ -38,11 +38,11 @@
             </li>
         </ul>
 
-        <figure class="mo-hb-menu">
-             <span></span>
-             <span></span>
-             <span></span>
-        </figure>
+        <button class="mo-hb-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
         <div class="side-menu">
             <ul class="side-menu-list">
@@ -103,7 +103,10 @@
                 <h2 class="bm-title">
                     정확한 진단과 전문 의료진의 손길로
                     <br>
-                    <p>치료의 기준을 새롭게</p> 합니다
+                    <span class="bm-highlight-text">
+                        치료의 기준을 새롭게
+                    </span>
+                    합니다
                 </h2>
                 <div class="bm-line"></div>
                 <p class="bm-text">
@@ -282,9 +285,9 @@
                         </div>
                         <div class="value-line"></div>
                         <ul class="we-value">
-                            <h3 class="value-list-title">
+                            <li class="value-list-title">
                                 We Value
-                            </h3>
+                            </li>
                             <li>
                                 <p>
                                     3D CT / 구강스캐너 기반의 정밀 진단
@@ -885,7 +888,7 @@
                         </div>
                     </div>
                     <div class="contact-line"></div>
-                    <form action="" class="contact-user-box">
+                    <form class="contact-user-box">
                         <div class="contact-user-info">
                             <p class="info-notice">
                                 * 입력하신 정보는 상담 목적으로만 사용됩니다.
@@ -900,8 +903,8 @@
                                     <input type="tel" id="tel" placeholder="010-0000-0000" required>
                                 </div>
                                 <div class="input-item">
-                                    <label for="services">진료 과목 선택</label>
-                                    <select name="services" id="services" required>
+                                    <label for="services-select">진료 과목 선택</label>
+                                    <select name="services" id="services-select" required>
                                         <option value="" disabled selected>과목 선택하기</option>
                                         <option value="implant">임플란트</option>
                                         <option value="orthodontics">치아교정</option>
@@ -1148,8 +1151,7 @@
 
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/swiper-bundle.min.js"></script>
-    <script type="text/javascript"
-        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6dd6e5b91b84483bb55e9e2fbc1d11c0&autoload=false"></script>
+    <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=6dd6e5b91b84483bb55e9e2fbc1d11c0&autoload=false"></script>
     <script src="./assets/js/script.js"></script>
 </body>
 
