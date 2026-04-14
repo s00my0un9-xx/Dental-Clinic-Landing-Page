@@ -129,7 +129,7 @@ kakao.maps.load(function () {
 
   var map = new kakao.maps.Map(mapContainer, mapOption);
 
-  var imageSrc = './assets/images/map_pin.png',
+  var imageSrc = './assets/images/map_pin.webp',
     imageSize = new kakao.maps.Size(40, 40),
     imageOption = { offset: new kakao.maps.Point(10, 40) };
 
