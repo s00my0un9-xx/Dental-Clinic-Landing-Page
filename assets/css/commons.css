@@ -100,7 +100,7 @@ p {
     box-shadow: 0 0 5px rgba(0, 0, 0, .4);
     align-items: center;
     justify-content: center;
-    z-index: 999;
+    z-index: 666;
     text-decoration: none;
 }
 
