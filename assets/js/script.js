@@ -1,4 +1,4 @@
-// alert ('해당 페이지는 개인 포트폴리오 사이트입니다.')
+alert ('해당 페이지는 개인 포트폴리오 사이트입니다.')
 
 // header ---
 const header = document.querySelector("#header");
